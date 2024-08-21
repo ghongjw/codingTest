@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class practice001 {
     public static void main(String[] args){
 
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        String sNum = sc.next();
-        char[] cNum = sNum.toCharArray();
-        int sum = 0;
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        String snum = scanner.next();
+        char[] c = snum.toCharArray();
 
-        for(int i=0; i<cNum.length; i++){
-            sum += cNum[i]-'0';
+        int sum = 0;
+        for(int i = 0; i<c.length;i++){
+            sum += c[i]-'0';
         }
         System.out.println(sum);
     }
